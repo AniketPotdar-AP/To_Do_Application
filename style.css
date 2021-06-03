@@ -1,0 +1,210 @@
+body{
+    background-color: whi;
+}
+#container{
+   background-color: rgb(132, 247, 247);
+}
+
+@media screen and (min-width:400px){
+    #container{
+        border: 2px solid black;
+        width: 60%;
+        margin: 5% 10% 20% 20%;
+        padding-bottom: 2%;
+        border-radius: 60px;
+    }
+    #header{
+        font-family: 'Inconsolata', monospace;
+        color: rgb(255, 0, 0);
+        text-align: center;
+        font-size: 220%;
+        margin: 0% 0% 6% 0%;
+        padding-bottom: 0%;
+        padding-top: 1%;
+    } 
+    #Inputbox{
+        font-size: 200%;
+        margin: 4% 30% 7% 16%;
+        width: 60%;
+        text-align: center;
+    }
+    #textBox{
+        margin-top: 7%;
+        background-color: transparent;
+        border: none;
+        color: rgb(0, 0, 0);
+        border-bottom: 2px solid black;
+        font-size: 35px;
+        text-align: center;
+        outline: none;
+        display: inline-block;
+        width: 50%;
+        font-family: sans-serif;
+    }
+    #addText{
+        font-size: 22px;
+        padding: 1% 0%;
+        border: none;
+        color: rgb(0, 0, 0);
+        border-radius: 100px;
+        margin-right: -17.5%;
+        outline: none;
+        display: inline-block;
+        width: 75px;
+        font-family: sans-serif;
+    }
+    #addText:hover{
+        background-color: lightgreen;
+        color: rgb(0, 0, 0);
+    }
+    ul {
+        margin-top: -8%;
+        padding: 3%;
+        text-align: center;
+    }
+    ul li:nth-child(odd){
+        background-image: linear-gradient(rgb(214, 88, 88), yellow);
+        font-size: 200%;  
+    } 
+    ul li{
+        cursor: pointer;
+        position: relative;
+        padding-top: 1%;
+        padding-left: 6%;
+        list-style-type: none;
+        margin-right: 5%;
+        margin-left: 10%;
+        font-family: 'Galada', cursive;
+        font-size: 200%;
+        margin-top: 1%;
+        background-image: linear-gradient(lightgreen, yellow);
+    }
+    ul li.checked::before {
+        content: '✔';
+        position: absolute;
+        border-color: black;
+        border-width: 0 3px 2px 0;
+        left: 2%;
+        transform: rotate(10deg);
+        height: 3vh;
+        width: 0.4%;
+        margin-top: -0.8%;
+    } 
+    .deleteTag {
+        position: absolute;
+        right: 19px;
+        top: 25px;
+        padding: 12px 16px 12px 16px;
+        margin-top: -22px;
+        color: black;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 100%; 
+    } 
+    .deleteTag:hover{
+        color:red;
+    }
+    ul li.checked{
+        background: whitesmoke;
+        color: black;
+        text-decoration: line-through;
+    }
+} 
+
+@media screen and (max-width:400px){
+    #header{
+        visibility: hidden;
+    } 
+    #Inputbox{
+        font-size: 200%;
+        margin: 4% 30% 14% 16%;
+        width: 60%;
+        text-align: center;
+    }
+    #textBox{
+        margin-top: 7%;
+        background-color: transparent;
+        border: none;
+        color: rgb(0, 0, 0);
+        border-bottom: 2px solid black;
+        font-size: 35px;
+        text-align: center;
+        outline: none;
+        width: 50%;
+        font-family: sans-serif;
+    }
+    #addText{
+        font-size: 22px;
+        padding: 1% 0%;
+        border: none;
+        color: rgb(0, 0, 0);
+        border-radius: 100px;
+        margin-right: -17.5%;
+        outline: none;
+        width: 75px;
+        font-family: sans-serif;
+        margin-top: 10%;
+    }
+    #addText:hover{
+        background-color: rgb(1, 217, 255,0.3);
+        color: rgb(0, 0, 0);
+    }
+    ul {
+        margin-top: -8%;
+        padding: 3%;
+        text-align: center;
+    }
+    ul li:nth-child(odd){
+        background-image: linear-gradient(rgb(214, 88, 88), yellow);
+        font-size: 200%;  
+    } 
+    ul li{
+        cursor: pointer;
+        position: relative;
+        padding-top: 1%;
+        padding-left: 6%;
+        list-style-type: none;
+        margin-right: 5%;
+        margin-left: 10%;
+        font-family: 'Galada', cursive;
+        font-size: 200%;
+        margin-top: 1%;
+        background-image: linear-gradient(lightgreen, yellow);;
+    }
+    ul li.checked::before {
+        content: '';
+        position: fixed;
+        border-color: black;
+        border-style: solid;
+        border-width: 0 3px 2px 0;
+        left: 20%;
+        transform: rotate(45deg);
+        height: 3vh;
+        width: 1.4%;
+        margin-top: 3.2%;
+    } 
+    .deleteTag {
+        position: absolute;
+        right: -3%;
+        top: 31%;
+        padding: 1% 5% 1% 1%;
+        margin-top: -3%;
+        color: black;
+        font: normal 14px/1 FontAwesome;
+        font-size: 100%;
+    } 
+    .deleteTag:hover{
+        color:red;
+    }
+    ul li.checked{
+        background: whitesmoke;
+        color: black;
+        text-decoration: line-through;
+    }
+    #checkBox{
+        height: 2vh;
+        width: 1%;
+        margin-left: 1%;
+        margin-right: 1%;
+        text-align: center;
+    }
+}    
