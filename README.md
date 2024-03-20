@@ -20,4 +20,4 @@ Once they are done with their tasks they can also remove them from the list. Thi
 4] And at the last, you will able to delete it using "Delete" Button.
  
  <br>
-To Do Application :- https://aniketpotdar-ap.github.io/To_Do_Application/
+To Do Application :- https://todapplication.netlify.app
